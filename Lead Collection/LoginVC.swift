@@ -26,7 +26,7 @@ class LoginVC: UIViewController {
         
 //        print(emailTextField.text,passwordTextField.text)
       
-        
+        print ("Al doilea proiect")
         
         if emailTextField.text == "email@me.com",
             passwordTextField.text == "pass" {
