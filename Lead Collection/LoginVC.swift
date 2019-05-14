@@ -19,6 +19,8 @@ class LoginVC: UIViewController {
         // Do any additional setup after loading the view.
         errorLabel.isHidden = true
         errorLabel.text = "Invalid credentials"
+//        emailTextField.text="email@me.com"
+//        passwordTextField.text="pass"
     }
 
     
@@ -27,6 +29,9 @@ class LoginVC: UIViewController {
 //        print(emailTextField.text,passwordTextField.text)
       
         print ("Al doilea proiect")
+        
+        
+        
         
         if emailTextField.text == "email@me.com",
             passwordTextField.text == "pass" {
