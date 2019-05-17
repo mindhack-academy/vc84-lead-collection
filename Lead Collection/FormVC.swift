@@ -33,7 +33,27 @@ class FormVC: UIViewController {
               reasonTextField.text,
         contactDateDatePicker.date)
         
+        var user: User = User()
+        
+            user.firstName = firstNameTextField.text
+            user.lastName = lastNameTextField.text
+            user.email = emailTextField.text
+            user.phone = phoneTextField.text
+        
+        print("----- USER -----")
+        print(user)
+        
+        var formData: FormData = FormData ()
+            formData.user = user
+            formData.technology = technologySegmentedControl.selectedSegmentIndex
+            formData.reason = reasonTextField.text
+            formData.contactDate = contactDateDatePicker.date
+        
+        print("----- FORM DATA -----")
+        print(formData)
     }
+    
+    
     @IBAction func resetButtonWasPressed(_ sender: Any) {
         
         

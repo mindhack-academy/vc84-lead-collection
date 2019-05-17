@@ -14,6 +14,8 @@
 		18B681B82284955800EAB341 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B681B72284955800EAB341 /* Assets.xcassets */; };
 		18B681BB2284955800EAB341 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B681B92284955800EAB341 /* LaunchScreen.storyboard */; };
 		18B681C32284A7B000EAB341 /* FormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B681C22284A7B000EAB341 /* FormVC.swift */; };
+		18B7B309228F05BE00DCF7FE /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7B308228F05BE00DCF7FE /* Classes.swift */; };
+		18B7B30B228F173900DCF7FE /* FormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7B30A228F173900DCF7FE /* FormData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		18B681BA2284955800EAB341 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18B681BC2284955800EAB341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B681C22284A7B000EAB341 /* FormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormVC.swift; sourceTree = "<group>"; };
+		18B7B308228F05BE00DCF7FE /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		18B7B30A228F173900DCF7FE /* FormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				18B681BC2284955800EAB341 /* Info.plist */,
 				18B681C22284A7B000EAB341 /* FormVC.swift */,
 				18AE1519228B219D00FEEB2A /* ListTVC.swift */,
+				18B7B308228F05BE00DCF7FE /* Classes.swift */,
+				18B7B30A228F173900DCF7FE /* FormData.swift */,
 			);
 			path = "Lead Collection";
 			sourceTree = "<group>";
@@ -144,7 +150,9 @@
 				18B681B32284955800EAB341 /* LoginVC.swift in Sources */,
 				18AE151A228B219D00FEEB2A /* ListTVC.swift in Sources */,
 				18B681B12284955800EAB341 /* AppDelegate.swift in Sources */,
+				18B7B309228F05BE00DCF7FE /* Classes.swift in Sources */,
 				18B681C32284A7B000EAB341 /* FormVC.swift in Sources */,
+				18B7B30B228F173900DCF7FE /* FormData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
