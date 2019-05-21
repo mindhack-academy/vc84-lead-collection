@@ -22,16 +22,16 @@ class FormVC: UIViewController {
     @IBOutlet weak var resetButton: UIButton!
     
     @IBAction func sendButtonWasPressed(_ sender: Any) {
-        print(firstNameTextField.text,
-              lastNameTextField.text,
-              emailTextField.text,
-              phoneTextField.text,
-              
-//              technologySegmentedControl.selectedSegmentIndex,
-              technologySegmentedControl.titleForSegment(at: technologySegmentedControl.selectedSegmentIndex),
-              
-              reasonTextField.text,
-        contactDateDatePicker.date)
+//        print(firstNameTextField.text,
+//              lastNameTextField.text,
+//              emailTextField.text,
+//              phoneTextField.text,
+//
+////              technologySegmentedControl.selectedSegmentIndex,
+//              technologySegmentedControl.titleForSegment(at: technologySegmentedControl.selectedSegmentIndex),
+//
+//              reasonTextField.text,
+//        contactDateDatePicker.date)
         
         var user: User = User()
         
@@ -51,15 +51,36 @@ class FormVC: UIViewController {
         
         print("----- FORM DATA -----")
         print(formData)
+        
+        
+        // add to StorageManager
+        StorageManager.shared.addData(formData: formData)
+        
+        // print StorageManager data
+        print (StorageManager.shared.getData())
+        
+        // reset form
+        resetForm()
+        
+        
     }
     
     
     @IBAction func resetButtonWasPressed(_ sender: Any) {
-        
-        
-        
+        resetForm()
     }
     
+    func resetForm() {
+        firstNameTextField.text = ""
+        lastNameTextField.text = ""
+        emailTextField.text = ""
+        phoneTextField.text = ""
+        technologySegmentedControl.selectedSegmentIndex = 0
+        reasonTextField.text = ""
+        contactDateDatePicker.date = Date()
+        //in order to reposition the cursor on a specific field
+        firstNameTextField.becomeFirstResponder()
+    }
     
     
     override func viewDidLoad() {
