@@ -9,7 +9,7 @@
 import Foundation
 
 
-class FormData{
+class FormData: Codable {
     var user: User?
     
     var technology: Int?
@@ -20,14 +20,14 @@ class FormData{
     
 }
 
-class User {
+class User: Codable {
     var firstName: String?
     var lastName: String?
     var email: String?
     var phone: String?
 }
 
-class Technology {
+class Technology: Codable {
     var title: String?
     var uid: String?
 }
